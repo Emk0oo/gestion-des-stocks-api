@@ -9,6 +9,7 @@ import { SupabaseController } from './supabase/supabase.controller';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+    }),
   ],
   controllers: [AppController, SupabaseController],
   providers: [AppService, SupabaseService],
