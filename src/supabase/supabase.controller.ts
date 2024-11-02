@@ -7,7 +7,8 @@ export class SupabaseController {
 
   @Get('data')
   async getData() {
-    const data = await this.supabaseService.getData('your_table_name'); // Remplace par le nom de ta table
+    const data = await this.supabaseService.getData('roles'); // Remplace par le nom de ta table
+    console.log(data);
     return data;
   }
 }
